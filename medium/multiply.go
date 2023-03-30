@@ -2,6 +2,7 @@ package medium
 
 import "strings"
 
+//lint:ignore U1000 Ignore unused function temporarily for debugging
 func multiply(num1 string, num2 string) string {
 
 	if num1[0]-'0' == 0 || num2[0]-'0' == 0 {

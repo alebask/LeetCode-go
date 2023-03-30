@@ -2,7 +2,7 @@ package medium
 
 import "math"
 
-// lint:ignore
+//lint:ignore U1000 Ignore unused function temporarily for debugging
 func divide(dividend int, divisor int) int {
 
 	res := 0

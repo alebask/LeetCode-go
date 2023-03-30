@@ -1,5 +1,6 @@
 package medium
 
+//lint:ignore U1000 Ignore unused function temporarily for debugging
 func palondromePartitioning(s string) [][]string {
 
 	res := make([][]string, 0)
@@ -35,6 +36,7 @@ func palondromePartitioning(s string) [][]string {
 	return res
 }
 
+//lint:ignore U1000 Ignore unused function temporarily for debugging
 func palondromePartitioningChannels(s string) [][]string {
 
 	toCharStream := func(s string) <-chan string {

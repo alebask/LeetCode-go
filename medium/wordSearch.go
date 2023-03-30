@@ -120,6 +120,7 @@ func wordSearchAsync(board [][]byte, word string) bool {
 	return res
 }
 
+//lint:ignore U1000 Ignore unused function temporarily for debugging
 func wordSearchChannels(board [][]byte, word string) bool {
 
 	m := len(board)
