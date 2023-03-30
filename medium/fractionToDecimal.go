@@ -13,10 +13,11 @@ func fractionToDecimal(numerator int, denominator int) string {
 	}
 
 	res := ""
-	if n < 0 {
+	if (numerator < 0 && denominator > 0) || (numerator > 0 && denominator < 0) {
 		res += "-"
 	}
-	res += strconv.Itoa(n) + "."
+
+	res += strconv.Itoa(abs(n)) + "."
 
 	ht := make(map[int]int)
 
@@ -29,7 +30,7 @@ func fractionToDecimal(numerator int, denominator int) string {
 			n = -n
 		}
 
-		res += strconv.Itoa(n)
+		res += strconv.Itoa(abs(n))
 
 		if index, ok := ht[r]; ok {
 			return res[:index] + "(" + res[index:] + ")"

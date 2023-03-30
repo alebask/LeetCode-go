@@ -11,9 +11,10 @@ func Test_fractionToDecimal(t *testing.T) {
 		d        int
 		expected string
 	}{
-		{n: 1, d: 2, expected: "0.5"},
+		//{n: 1, d: 2, expected: "0.5"},
 		//{n: 2, d: 1, expected: "2"},
 		//{n: 4, d: 333, expected: "0.(012)"},
+		{n: 7, d: -12, expected: "-0.58(3)"},
 	}
 
 	for _, tt := range tests {
